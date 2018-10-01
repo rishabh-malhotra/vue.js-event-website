@@ -1,7 +1,6 @@
 <template>
 <div>
-    <h1>Event-Details</h1>
-    <event-view></event-view>
+    <event-view :value = "$route.params.id"></event-view>
 </div>
 </template>
 

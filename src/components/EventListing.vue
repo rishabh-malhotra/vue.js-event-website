@@ -76,5 +76,6 @@ export default {
     .box-card{
         margin-bottom: 20px;
         margin-top:10px;
+        box-shadow: 3px 3px 3px 3px #888888;
     }
 </style>
