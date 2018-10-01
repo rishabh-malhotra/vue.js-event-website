@@ -20,21 +20,23 @@
 </template>
 
 <script>
+import eventValue from "@/data/DataValues.js";
 import EventListing from './EventListing'
-import eventValue from "@/data/DataValues.js"
-
+var x=eventValue
 export default{
     name: "EventView",
     props: {
-        value: String
+        value: Number
     },
     methods:{
-      getEvent: function() {
-      for (let i = 0; i < eventValue.events.length; i++) {
-          console.log(this.value)
-        if (eventValue.events[i].id === parseInt(this.value))
-        console.log(eventValue.events[i])
-          return eventValue.events[i];
+        
+        getEvent: function() {
+            
+            for (let i = 0; i < x.events.length; i++) {
+                console.log(typeof(this.value))
+                console.log(x.events.length)
+            if (x.events[i].id === this.value)
+                return x.events[i];
       }
     }    
  }
